@@ -1,0 +1,145 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .signup-box {
+    background: linear-gradient(135deg, #ffffff, #f2f8ff);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    transform: translateY(40%);
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .signup-box h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .signup-box input[type="text"],
+  .signup-box input[type="email"],
+  .signup-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #f8f8f8;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .signup-box input[type="text"]:focus,
+  .signup-box input[type="email"]:focus,
+  .signup-box input[type="password"]:focus {
+    border: 1px solid #4CAF50;
+  }
+  
+  .signup-box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-box input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .signup-link a:hover {
+    color: #45a049;
+  }
+  
+  /* Responsive styles */
+  
+  /* For devices with a max width of 768px (tablets and below) */
+  @media (max-width: 768px) {
+    .signup-box {
+      width: 80%;
+      padding: 30px;
+      transform: translateY(20%);
+    }
+  
+    .signup-box h2 {
+      font-size: 24px;
+    }
+  
+    .signup-box input[type="text"],
+    .signup-box input[type="email"],
+    .signup-box input[type="password"] {
+      padding: 10px;
+    }
+  
+    .signup-box input[type="submit"] {
+      padding: 10px;
+    }
+  }
+  
+  /* For devices with a max width of 480px (mobile devices) */
+  @media (max-width: 480px) {
+    .signup-box {
+      width: 90%;
+      padding: 20px;
+      transform: translateY(10%);
+    }
+  
+    .signup-box h2 {
+      font-size: 20px;
+    }
+  
+    .signup-box input[type="text"],
+    .signup-box input[type="email"],
+    .signup-box input[type="password"] {
+      padding: 8px;
+    }
+  
+    .signup-box input[type="submit"] {
+      padding: 10px;
+      margin-top: 15px;
+    }
+  
+    .signup-link {
+      font-size: 12px;
+    }
+  }
+  

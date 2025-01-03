@@ -1,0 +1,62 @@
+/* welcome.css */
+
+/* General Layout */
+.snippet-manager-container {
+  display: flex;
+  height: 95vh;
+  
+}
+
+.sidebar {
+  width: 23%; /* Adjust width as needed */
+  background-color: #2c3c55;
+  color: #fff;
+  overflow-y: auto;
+}
+
+.editor-container {
+  flex-grow: 1;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .snippet-manager-container {
+      flex-direction: column; /* Stack sidebar and editor vertically on smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+  }
+  
+  .sidebar, .editor-container {
+      width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+
+
+ 
+
+.create-snippet-button {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0px 5px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-snippet-button:hover {
+  box-shadow: 1px 1px 10px #c4c4c4, -1px -1px 1px #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .create-snippet-button {
+      margin: 15px auto 5px auto; /* Center button horizontally */
+      display: block; /* Ensure button takes full width on smaller screens */
+  }
+}

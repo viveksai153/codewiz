@@ -1,0 +1,380 @@
+/* community.css */
+
+/* General layout */
+.community-navbar {
+  display: flex;
+  justify-content: end;
+  background-color: #818981; /* Different color for navbar */
+  padding: 10px;
+   
+}
+
+.community-navbar button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4dd451;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.community-navbar button:hover {
+  background-color: #0056b3;
+}
+
+ 
+
+/* community.css */
+
+/* Main container for communities */
+.community-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Container for each card */
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for each card */
+.card {
+  width: 70%;
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #27ae60; /* Border color */
+  border-radius: 10px;
+  background-color: #ecf0f1; /* Background color for cards */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  background-color: #d5dbdb; /* Darker background color on hover */
+}
+
+/* Heading style for each card */
+.card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #2c3e50; /* Text color */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Styling for the lists inside cards */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for list items inside cards */
+.card li {
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7; /* Border color for list items */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Remove border bottom for last list item */
+.card li:last-child {
+  border-bottom: none;
+}
+
+/* Background color on hover for list items */
+.card li:hover {
+  background-color: #bdc3c7; /* Light background color on hover */
+}
+
+/* Message for no communities */
+.no-communities {
+  font-size: 18px;
+  color: #7f8c8d; /* Text color for no communities message */
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+
+
+/* memberpanel.css */
+.member-sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #deb1ff;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.member-sidebar h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.member-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.member-sidebar li {
+  margin-bottom: 10px;
+}
+
+.member-sidebar a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.member-sidebar a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Add a button to toggle the sidebar */
+.sidebar-toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sidebar-toggle-btn:focus {
+  outline: none;
+}
+
+.sidebar-toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* CommunityMessages.css */
+.community-messages {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 60%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sent {
+  background-color: #d1ffd6;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #ffffff;
+  align-self: flex-start;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message small {
+  display: block;
+  text-align: right;
+  color: #888;
+  margin-top: 5px;
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 30px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 15px;
+  margin-left: 250px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.message-input button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* CommunityMembers.css */
+.community-members {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+
+  padding: 20px;
+}
+
+.community-members h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #007bff;
+}
+
+li p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* CommunitySnippets.css */
+.community-snippets {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.community-snippets h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #007bff;
+}
+
+li p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+li pre {
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 13px;
+  color: #333;
+}
+
+li pre code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+/* MemberSidebar styling */
+.member-sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #deb1ff;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+}
+
+.member-sidebar h2 {
+  font-size: 18px;
+  color: #ddd5d5;
+}
+
+.member-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.member-sidebar li {
+  margin-bottom: 10px;
+}
+
+.member-sidebar a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.member-sidebar a:hover {
+  text-decoration: underline;
+}

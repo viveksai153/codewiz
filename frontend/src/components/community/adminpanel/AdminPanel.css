@@ -1,0 +1,134 @@
+.admin-panel {
+    padding: 20px;
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .admin-panel h1 {
+    text-align: center;
+    color: #3b3b3b;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .user-management {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .user-management h2 {
+    margin-bottom: 20px;
+    color: #3b3b3b;
+    font-size: 2rem;
+  }
+  
+  .user-management ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-item span {
+    flex: 3;
+    color: #3b3b3b;
+    font-weight: 500;
+  }
+  
+  .user-item select {
+    flex: 2;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .user-item button {
+    flex: 1;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    background-color: #2077d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .user-item button:disabled {
+    background-color: #d3d3d3;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .user-item button:not(:disabled):hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .user-item button.remove-btn {
+    background-color: #ff5c5c;
+    color: #fff;
+  }
+  
+  .user-item button.remove-btn:hover {
+    background-color: #ef0000;
+  }
+
+  .changerole{
+    background-color: #92bbe6;
+  }
+
+  
+  .admin-panel {
+    padding: 20px;
+  }
+  
+  .community-actions {
+    display: flex;
+    justify-content: flex-end; /* Align items to the left */
+    margin-bottom: 20px; /* Add some space below the actions */
+  }
+  
+  .delete-c-btn {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+    margin-right: 20px; /* Space to the right of the button */
+  }
+  
+  .delete-c-btn:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+  }
+  
+  .delete-c-btn:active {
+    background-color: #e60000; /* Even darker red on active */
+    transform: scale(1); /* Reset scale on active */
+  }
+  

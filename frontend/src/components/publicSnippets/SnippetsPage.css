@@ -1,0 +1,151 @@
+/* SnippetsPage.css */
+
+/* General Styles */
+
+/* Container for search bar and select */
+.search-container {
+  display: flex;
+   
+  justify-content: space-between;
+}
+
+/* Search Bar */
+.search-Bar {
+  width: calc(90% - 10px); /* 50% width minus margin */
+  margin:10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.search-Bar::placeholder {
+  color: #aaa;
+}
+
+.search-Bar:focus {
+  outline: none;
+  border-color: #44c1c1;
+}
+
+/* Select Dropdown */
+.select-container {
+  width: calc(30% - 10px); /* 50% width minus margin */
+}
+
+select {
+  width: 90%; /* Full width */
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  transform-origin: right center;
+}
+
+select:focus {
+  outline: none;
+  border-color: #44c1c1;
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Optional: Add hover effect for options */
+option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Snippet Card Styles */
+
+.snippet-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tagss {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.code {
+  margin-top: 10px;
+}
+
+.viewmore-btn,
+.preview-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #3338be;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.viewmore-btn:hover,
+.preview-btn:hover {
+  background-color: #4d9ac1;
+  transform: translateY(-2px);
+}
+
+/* Pagination Styles */
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  background-color: #3338be;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #4d9ac1;
+  transform: translateY(-2px);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .search-Bar,
+  .select-container {
+    width: 100%; /* Full width for smaller screens */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+}

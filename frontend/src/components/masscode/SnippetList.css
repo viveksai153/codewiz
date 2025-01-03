@@ -1,0 +1,249 @@
+.snippets-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0px;
+}
+
+.snippet-card {
+    position: relative;
+    background: linear-gradient(135deg, #cbccb8 0%, #2c2ad0 100%);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px 10px 5px 10px;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.snippet-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #a5a692 0%, #0c0a80 100%);
+}
+
+.snippet-content {
+    cursor: pointer;
+}
+
+.snippet-content h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.snippet-content .language {
+    margin: 7px 116px 0px 0px;
+    font-size: 1rem;
+    padding: 5px 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.snippet-content .language[data-language="javascript"] {
+    background-color: #f0db4f; /* Yellow for JavaScript */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="python"] {
+    background-color: #306998; /* Dark blue for Python */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="java"] {
+    background-color: #b07219; /* Brown for Java */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="csharp"] {
+    background-color: #68217a; /* Purple for C# */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="ruby"] {
+    background-color: #cc342d; /* Red for Ruby */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="php"] {
+    background-color: #4F5D95; /* Blue for PHP */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="swift"] {
+    background-color: #ffac45; /* Orange for Swift */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="typescript"] {
+    background-color: #007acc; /* Blue for TypeScript */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="go"] {
+    background-color: #00add8; /* Aqua for Go */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="rust"] {
+    background-color: #dea584; /* Light brown for Rust */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="scala"] {
+    background-color: #7dd3b0; /* Green for Scala */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="kotlin"] {
+    background-color: #5b418f; /* Purple for Kotlin */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="html"] {
+    background-color: #e34c26; /* Orange for HTML */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="css"] {
+    background-color: #2965f1; /* Blue for CSS */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="sass"] {
+    background-color: #c69; /* Pink for Sass */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="less"] {
+    background-color: #1d365d; /* Dark blue for Less */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="c"] {
+    background-color: #555; /* Gray for C */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="cplusplus"] {
+    background-color: #00599c; /* Dark blue for C++ */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="sql"] {
+    background-color: #e38d13; /* Orange for SQL */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="swift"] {
+    background-color: #ffac45; /* Orange for Swift */
+    color: #333; /* Text color */
+}
+
+.snippet-content .language[data-language="objective-c"] {
+    background-color: #438eff; /* Blue for Objective-C */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="dart"] {
+    background-color: #0175c2; /* Dark blue for Dart */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="lua"] {
+    background-color: #000080; /* Navy blue for Lua */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="r"] {
+    background-color: #276dc3; /* Dark blue for R */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="perl"] {
+    background-color: #0298c3; /* Blue for Perl */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="shell"] {
+    background-color: #000000; /* Black for Shell */
+    color: #fff; /* Text color */
+}
+
+.snippet-content .language[data-language="powershell"] {
+    background-color: #012456; /* Dark blue for PowerShell */
+    color: #fff; /* Text color */
+}
+
+/* Add more styles for other languages as needed */
+
+
+ 
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #6a69ab;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+ 
+/* Add more styles for other languages as needed */
+
+.delete-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+    color: #44c1c1;
+    transition: color 0.5s ease;
+    transform: scale(1.2);
+}
+
+
+
+/* SnippetList.css */
+
+.snippets-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the min and max width of each card */
+    gap: 10px; /* Add some gap between cards */
+}
+
+.snippet-card {
+    position: relative;
+    background: linear-gradient(135deg, #cbccb8 0%, #2c2ad0 100%);
+    border-radius: 15px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .snippets-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust card width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .snippets-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust card width for even smaller screens */
+    }
+
+    .snippet-card {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+

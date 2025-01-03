@@ -1,0 +1,102 @@
+/* Editor.css */
+
+.monaco-editor-container {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.editor-controls {
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.snippet-title-input,
+.snippet-tags-input,
+.snippet-language-select {
+  width: calc(100% - 30px); /* Adjust width for padding */
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.snippet-title-input:focus,
+.snippet-tags-input:focus,
+.snippet-language-select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.snippet-save-button {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.snippet-save-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive styling for larger screens */
+@media (min-width: 600px) {
+  .snippet-title-input,
+  .snippet-tags-input,
+  .snippet-language-select,
+  .snippet-save-button {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .editor-controls {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Responsive styling for extra small screens */
+@media (max-width: 599px) {
+  .editor-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .snippet-title-input,
+  .snippet-tags-input,
+  .snippet-language-select,
+  .snippet-save-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.monaco-editor-container {
+  height: calc(100vh - 150px); /* Adjust the height according to other elements */
+}
+
+/* Extra styling for the editor container to ensure it is responsive */
+@media (max-width: 1024px) {
+  .monaco-editor-container {
+    height: calc(100vh - 200px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .monaco-editor-container {
+    height: calc(100vh - 250px); /* Adjust for even smaller screens */
+  }
+}
+
+
+ 

@@ -1,0 +1,177 @@
+/* notify.css */
+
+/* Notifications container */
+.notifications-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Notifications list */
+.notifications-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Notification item */
+.notification-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #f8f9fa; /* Soft background color */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    animation: slideIn 0.5s ease forwards; /* Smooth slide animation */
+    opacity: 0;
+}
+
+.notification-item.active {
+    opacity: 1;
+}
+
+.notification-item.exiting {
+    transform: translateY(100%) rotate(-5deg); /* Slight rotation when exiting */
+    opacity: 0;
+}
+
+/* Notification message */
+.notification-message {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #333; /* Dark text color */
+    font-size: 16px;
+}
+
+/* Notification status */
+.notification-status {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #777; /* Dim status text color */
+}
+
+/* Notification buttons */
+.notification-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Button style */
+.notification-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Read button */
+.notification-button.read {
+    background-color: #00796b; /* Green for read */
+    color: #fff; /* White text */
+}
+
+/* Disabled read button */
+.notification-button.read:disabled {
+    background-color: #b2dfdb; /* Lighter green when disabled */
+}
+
+/* Delete button */
+.notification-button.delete {
+    background-color: #d32f2f; /* Red for delete */
+    color: #fff; /* White text */
+}
+
+/* Button hover effect */
+.notification-button:hover {
+    background-color: #ddd; /* Light background on hover */
+    transform: scale(1.05); /* Slight scale up */
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .notifications-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .notification-item {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 10px 0; /* Reduce margin for smaller screens */
+    }
+
+    .notification-buttons {
+        gap: 10px; /* Reduce gap between buttons for smaller screens */
+    }
+
+    .notification-button {
+        padding: 8px 16px; /* Reduce button padding for smaller screens */
+    }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* notify.css */
+
+ 
+/* .notification-item.exiting {
+    animation: fallDown 0.5s ease forwards;
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%) rotate(5deg);
+        opacity: 0;
+    }
+} */
+
+
+
+/* notify.css */
+
+/* Notification item exiting animation */
+.notification-item.exiting {
+    animation: fallDown 0.5s ease forwards, fadeOut 0.5s ease forwards;
+}
+
+@keyframes fallDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

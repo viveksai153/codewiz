@@ -1,0 +1,56 @@
+/* memberPanel.css */
+
+/* Main content */
+.main-content {
+    margin-left: 220px; /* Adjust based on the width of the sidebar */
+    padding: 20px;
+  }
+  
+  /* Dashboard */
+  .dashboard-container {
+    background-color: #D3C5E5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Snippets */
+  .snippets-container {
+    background-color: #D3C5E5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Members */
+  .members-container {
+    background-color: #D3C5E5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Messages */
+  .messages-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Message icon */
+  .message-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+   
+  
+ 
+
+
+ 

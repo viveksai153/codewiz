@@ -1,0 +1,23 @@
+.user-management {
+  padding: 20px;
+}
+
+.user-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-management li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-management select {
+  margin-left: 10px;
+}
+
+.user-management button {
+  margin-left: 10px;
+}

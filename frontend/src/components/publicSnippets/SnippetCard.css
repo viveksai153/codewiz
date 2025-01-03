@@ -1,0 +1,43 @@
+/* SnippetCard.css */
+
+ 
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.tagss {
+  color: #3c3737;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.code {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.viewmore-btn,
+.preview-btn {
+  background-color: #44c1c1;
+  color: #ffffff;
+  border: none;
+  padding: 8px 10px 10px 10px;
+  margin-left: 10px;;
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewmore-btn:hover,
+.preview-btn:hover {
+  background-color: #218c8c;
+}
+
+.viewmore-btn:focus,
+.preview-btn:focus {
+  outline: none;
+}

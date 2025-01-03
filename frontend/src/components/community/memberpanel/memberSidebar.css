@@ -1,0 +1,95 @@
+.membersidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #735DA5;
+  border-right: 1px solid #ccc;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url('../../../../public/back.png'); /* Update the path to your actual image location */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circle-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Optional: add a hover effect */
+}
+
+.membersidebar h2 {
+  font-size: 27px;
+  color: #333;
+}
+
+.membersidebar hr {
+  margin: 10px 0;
+}
+
+.membersidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.membersidebar li {
+  margin-bottom: 10px;
+}
+
+.dashboard-button,
+.snippets-button,
+.members-button,
+.messages-button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.dashboard-button:hover,
+.snippets-button:hover,
+.members-button:hover,
+.messages-button:hover {
+  text-decoration: underline;
+}
+
+.dashboard-button {
+  color: #007bff;
+}
+
+.snippets-button {
+  color: #28a745;
+}
+
+.members-button {
+  color: #17a2b8;
+}
+
+.messages-button {
+  color: #ffc107;
+}
+
+
+.selected {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}

@@ -1,0 +1,33 @@
+/* Profile.css */
+
+.container {
+  margin-top: 20px;
+}
+
+.profile-paper {
+  padding: 20px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-title {
+  margin-bottom: 20px;
+}
+
+.profile-button {
+  margin-top: 20px;
+}
+
+.analytics-paper {
+  padding: 20px;
+}
+
+.analytics-title {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  margin-top: 20px;
+}

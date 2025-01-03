@@ -1,0 +1,22 @@
+/* Style for the search bar input */
+.search-bar {
+    width: 80%; /* 80.5% width to fill its container */
+    padding: 12px 20px; /* Comfortable padding for typing */
+    margin: 10px 20px; /* Space above and below */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: 2px solid #ccc; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Readable text size */
+    background-color: white;
+    
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+/* Style for the search bar when it is focused (user clicks or tabs into it) */
+.search-bar:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #007BFF; /* Highlighted border color when focused */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Subtle glow effect */
+    box-shadow: 5px 5px 15px #c4c4c4, -5px -5px 15px #36637f;
+}
+
