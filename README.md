@@ -29,5 +29,5 @@ It’s built to make your coding workflow faster and more organized.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/codewiz.git
+   git clone https://github.com/viveksai153/codewiz.git
    cd codewiz
